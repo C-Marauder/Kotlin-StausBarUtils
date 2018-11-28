@@ -1,4 +1,4 @@
-# Kotlin-StausBarHelper
+# Kotlin-StatusBarHelper
 ## 1.使用
 ```
 在Activity的onCreate()方法中调用
