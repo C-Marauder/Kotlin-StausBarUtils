@@ -1,4 +1,4 @@
-package com.core.statusbarhelper
+package com.xqy.androidx.statusbarhelper
 
 import android.annotation.SuppressLint
 import android.os.Build
@@ -21,7 +21,7 @@ object StatusBarHelper  {
 
         } else {
             when(Build.BRAND){
-                "Xiaomi"->setMIUIMode(activity,isDark)
+                "Xiaomi"-> setMIUIMode(activity,isDark)
                 "Meizu"-> setFlymeMode(activity,isDark)
                 else-> {
                     activity.window.decorView.systemUiVisibility = if (isDark){
