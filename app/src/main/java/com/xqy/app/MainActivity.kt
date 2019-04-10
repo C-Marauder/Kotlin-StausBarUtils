@@ -3,7 +3,7 @@ package com.xqy.app
 import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
 import kotlinx.android.synthetic.main.activity_main.*
-import com.xqy.androidx.statusbarhelper.StatusBarHelper
+import com.xqy.android.statusbar.StatusBarHelper
 
 class MainActivity : AppCompatActivity() {
     private var isFirst:Boolean = true
