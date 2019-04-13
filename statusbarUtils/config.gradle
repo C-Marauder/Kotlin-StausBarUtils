@@ -4,8 +4,8 @@ apply plugin: 'com.github.dcendents.android-maven'
 apply plugin: 'com.jfrog.bintray'
 
 ext {
-    gitUrl = 'https://github.com/xqy666666/Kotlin-StausBarHelper.git'
-    siteUrl = 'https://github.com/xqy666666/Kotlin-StausBarHelper'
+    gitUrl = 'https://github.com/xqy666666/Kotlin-StausBarUtils.git'
+    siteUrl = 'https://github.com/xqy666666/Kotlin-StausBarUtils'
     libraryName = 'statusbarUtils'
 
 }
