@@ -6,11 +6,11 @@ apply plugin: 'com.jfrog.bintray'
 ext {
     gitUrl = 'https://github.com/xqy666666/Kotlin-StausBarHelper.git'
     siteUrl = 'https://github.com/xqy666666/Kotlin-StausBarHelper'
-    libraryName = 'statusbarhelper'
+    libraryName = 'statusbarUtils'
 
 }
 
-group = 'com.xqy.androidx.statusbarhelper'
+group = 'com.xqy.android.statusbar'
 version = '1.0.0'
 
 install {
@@ -19,7 +19,7 @@ install {
         pom {
             project {
                 packaging 'aar'
-                groupId 'com.xqy.androidx.statusbarhelper'
+                groupId 'com.xqy.android.statusbar'
                 artifactId libraryName
                 name libraryName
                 url siteUrl
@@ -85,7 +85,7 @@ task javadocJar(type: Jar, dependsOn: javadoc) {
 
 }
 task classesJar(type: Jar) {
-    from "$buildDir/intermediates/classes/release"
+    from "$buildDir.absolutePath/temp/kotlin-classes/release"
 
 }
 
@@ -103,7 +103,7 @@ javadoc {
         author true
         version version
         links "http://docs.oracle.com/javase/7/docs/api"
-        title 'permission'
+        title 'statusbarUtils'
     }
 }
 
@@ -119,7 +119,7 @@ bintray {
     pkg {
         userOrg = 'xqy'
         repo = 'maven'
-        name = 'statusbarhelper'
+        name = 'statusbarUtils'
         licenses = ['Apache-2.0']
         publish = true
         version {

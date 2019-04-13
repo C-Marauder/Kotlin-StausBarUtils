@@ -1,4 +1,4 @@
-package com.xqy.androidx.statusbarhelper
+package com.xqy.androidx.statusbar
 
 import android.annotation.SuppressLint
 import android.os.Build
@@ -6,7 +6,7 @@ import android.support.v7.app.AppCompatActivity
 import android.view.View
 
 
-object StatusBarHelper  {
+object StatusBarUtils {
 
 
     fun setStatusBarMode(activity:AppCompatActivity,isDark: Boolean) {
@@ -21,8 +21,8 @@ object StatusBarHelper  {
 
         } else {
             when(Build.BRAND){
-                "Xiaomi"-> setMIUIMode(activity,isDark)
-                "Meizu"-> setFlymeMode(activity,isDark)
+                "Xiaomi"-> setMIUIMode(activity, isDark)
+                "Meizu"-> setFlymeMode(activity, isDark)
                 else-> {
                     activity.window.decorView.systemUiVisibility = if (isDark){
                         View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN or View.SYSTEM_UI_FLAG_LAYOUT_STABLE

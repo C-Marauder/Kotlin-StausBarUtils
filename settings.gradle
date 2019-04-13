@@ -1,1 +1,1 @@
-include ':app', ':statusbarhelper'
+include ':app', ':statusbarUtils'
