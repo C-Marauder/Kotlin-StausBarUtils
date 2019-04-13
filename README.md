@@ -28,5 +28,6 @@ allprojects {
 //isDark true表示黑色，false表示白色
 StatusBarUtils.setStatusBarMode(activity,isDark)
 
-<img src="https://github.com/xqy666666/Kotlin-StausBarUtils/blob/master/statusbar.gif" width="300" height="600"/>
+```
 
+<img src="https://github.com/xqy666666/Kotlin-StausBarUtils/blob/master/statusbar.gif" width="300" height="600"/>
