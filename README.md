@@ -1,14 +1,11 @@
-# Kotlin-StatusBarHelper
+# Kotlin-StatusBarUtils
 
-[ ![Download](https://api.bintray.com/packages/xqy/maven/statusbar/images/download.svg?version=1.0.0) ](https://bintray.com/xqy/maven/statusbar/1.0.0/link)
+**动态改变状态栏颜色**
 
-## 1.使用
+[ ![Download](https://api.bintray.com/packages/xqy/maven/statusbarUtils/images/download.svg?version=1.0.0) ](https://bintray.com/xqy/maven/statusbarUtils/1.0.0/link)
+
 ```
-在Activity的onCreate()方法中调用
-//isDark true表示黑色，false表示白色
-StatusBarHelper.setStatusBarMode(activity,isDark)
-```
-## 2.依赖
+## 1.依赖
 * application build.gradle
 
 ```
@@ -23,4 +20,10 @@ allprojects {
 ```
 * app build.gradle
 
-`implementation 'com.xqy.androidx.statusbar:statusbar:1.0.0'`
+`implementation 'com.xqy.android.statusbar:statusbarUtils:1.0.0'`
+
+## 2.使用
+```
+在Activity的onCreate()方法中调用
+//isDark true表示黑色，false表示白色
+StatusBarHelper.setStatusBarMode(activity,isDark)
