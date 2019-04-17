@@ -6,20 +6,6 @@
 
 ## 1.依赖
 
-* application build.gradle
-
-```
-allprojects {
-    repositories {
-        maven {
-            url 'https://dl.bintray.com/xqy/maven'
-        }
-    }
-}
-
-```
-* app build.gradle
-
 `implementation 'com.xqy.android.statusbar:statusbarUtils:1.0.0'`
 
 ## 2.使用
